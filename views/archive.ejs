@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title><%= title %></title>
+
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Chela+One|Gloria+Hallelujah" rel="stylesheet">
+
+ <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+  <div class="row">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Estella</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="contact">Contact</a></li>
+              <li><a href="new">New Post</a></li>
+              <li><a href="edit">Edit Post</a></li>
+              <li><a href="archive">Archives</a></li>
+              <li><a href="article">Articles</a></li>
+            </ul>
+          </div>
+        </nav>
+  </div>
+
+  <div class="row">
+    <div class="jumbotron">
+        <h1><%= title %></h1>
+    </div> 
+  </div>
+ 
+ 
+ <div class="row">
+    <% if (posts) { %>
+
+      <% posts.forEach(function(post){ %>
+       <div class="col-xs-12 co;-md-6 col-lg-4">
+           <div>
+   
+               <div>
+                 <h3><h3><a href="/article" class="a-head"><%= post.title %></a></h3></h3>
+               </div>
+             </div>
+        
+       </div>
+        
+   
+      
+   
+      <% }); %>
+   
+    <% } else { %>
+   
+      <p>You have no blog posts</p>
+   
+    <% } %>
+ </div>
+
+</body>
+</html>

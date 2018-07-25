@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Picture Dorian Gray",
+      "Author": "Oscar Wilde",
+      "image": "https://a.wattpad.com/cover/6626233-352-k168522.jpg",
+      "date": "22/09/2018",
+      "time": "9:00pm",
+      "content": "Written in his distinctively dazzling manner, Oscar Wilde’s story of a fashionable young man who sells his soul for eternal youth and beauty is the author’s most popular work. The tale of Dorian Gray’s moral disintegration caused a scandal when it ﬁrst appeared in 1890, but though Wilde was attacked for the novel’s corrupting inﬂuence, he responded that there is, in fact, “a terrible moral in Dorian Gray.” Just a few years later, the book and the aesthetic/moral dilemma it presented became issues in the trials occasioned by Wilde’s homosexual liaisons, which resulted in his imprisonment. .”"
+    },
+    {
+      "id": 2,
+      "title": "Goodnight Mister Tom",
+      "Author": "Michelle Magorian",
+      "image": "https://girlwithherheadinabook.co.uk/wp/wp-content/uploads/2015/08/goodnight-mister-tom.jpg",
+      "date": "22/09/1994",
+      "time": "9:00pm",
+      "content": "London is poised on the brink of World War II. Timid, scrawny Willie Beech, is evacuated to the English countryside. At first, he is terrified of everything, of the country sounds and sights, even of Mr. Tom, the gruff, kindly old man who has taken him in. But gradually Willie forgets the hate and despair of his past. He learns to love a world he never knew existed, a world of friendship and affection in which harsh words and daily beatings have no place. Then a telegram comes. Willie must return to his mother in London. When weeks pass by with no word from Willie, Mr. Tom sets out for London to look for the young boy he has come to love as a son. "
+    },
+    {
+      "id": 3,
+      "title": "xo, Zach",
+      "Author": "Kendall Ryan",
+      "image": "https://images.gr-assets.com/books/1510245153l/36297992.jpg",
+      "date": "22/09/1994",
+      "time": "9:00pm",
+      "content": "I have always been a sucker for a great forbidden romance and Kendall delivered that in spades. She gave us a story between two people who are immediately connected to each other, but later find out that they shouldn’t be together. I have to say I think Zach might just be my favorite Kendall Ryan Hero to date!!! He was sweet, swoony, had a way with words both sweet and dirty and didn’t play any games. He went after what he wanted and didn’t give up no matter how many times Poppy pushed him away. And how couldn’t a person melt when you read about his interaction with Connor. I thought she was the perfect match for Zach. I loved the slow burn of their relationship."
+    },
+    {
+      "id": 4,
+      "title": "Love Machine",
+      "Author": "Kendall Ryan",
+      "image": "https://i1.wp.com/www.bookangelbooktopia.com/wp-content/uploads/2018/05/LoveMachine-TIA.jpg?fit=756%2C504",
+      "date": "22/09/1994",
+      "time": "9:00pm",
+      "content": " 'Love is friendship, but it is friendship  with fire in it’s belly.'……Meera.This quote truly summed up this story. As you can tell it is a friends to lovers story.Love Machine is such a fun, sexy and easy beach read….perfect for that afternoon escape.  There was just the right amount of humor, sexy times and emotion to captivate the audience all the way through.  This is probably one of my favorite Kendall Ryan books, but truly I have a hard time picking since I love all her books!!!! Although this is HANDS DOWN my favorite cover by Kendall"
+    },
+    {
+      "id": 5,
+      "title": "The Woman In The Window",
+      "Author": "A.J Finn",
+      "image": "https://shereadswithcats.com/wp-content/uploads/2017/12/IMG_7157-862x862.jpg",
+      "date": "22/09/1994",
+      "time": "9:00pm",
+      "content": "Anna Fox, lives alone in her townhouse spying on her neighbors, mixing psychotropics with red wine, watching old films—Hitchcock’s Rear Window, which this book is loosely based on—and chatting on message boards. Early on we learn that Anna suffers from agoraphobia, brought on by a traumatic incident, rendering her unable to leave her home without having a panic attack.Fascinating but tragic, heart wrenching story. I felt like I had been on an emotional roller coaster ride. The ending was a complete surprise to me but a good twist. Loved this book!"
+    },
+    {
+      "id": 6,
+      "title": "The Music Shop",
+      "Author": "Rachel Joyce",
+      "image": "https://scontent-arn2-1.cdninstagram.com/vp/8115c6ece542bfc49374c5a13feb071e/5BCC9177/t51.2885-15/e35/36847654_502206566916040_4111556584549646336_n.jpg?se=7&ig_cache_key=MTgyNDY1NDk0ODA3MjE3NzMyOA%3D%3D.2",
+      "date": "22/09/1994",
+      "time": "9:00pm",
+      "content": "It’s the late 1980s, and Frank Adair, a youngish man who’s been damaged in ways that aren’t immediately made clear, owns a record shop on a rundown street in a British suburb. CDs are threatening to make vinyl obsolete, yet Frank refuses to sell anything but the latter. It would be a disastrous business plan if he didn’t have a singular talent: Whenever a customer walks in, Frank can 'hear' exactly what music that person needs. A sad sack demanding only Chopin? Frank says he’ll groove to Aretha. If you love music and how it connects us, this is a great read."
+    }
+  ]
+}

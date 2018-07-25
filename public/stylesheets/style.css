@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(200, 120, 216);
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.jumbotron{
+  font-family: 'Chela One', cursive;
+  font-size:80px;
+  text-align: center;
+  background-color: rgba(201, 190, 197, 0.473);
+  color: white;
+}
+
+.navbar{
+  background-color:white;
+}
+
+.panel-primary>.panel-heading{
+  background-color:white;
+  /* border:5px solid black; */
+  color:rgba(167, 80, 135, 0.473);
+}
+
+.jumbotron{
+  box-shadow:3px 3px 5px 5px rgb(238, 217, 217);
+}
+
+.btn1, .btn2{
+  color:rgba(150, 49, 113, 0.473);
+  font-style: inherit;
+}
+
+#article{
+  background-color: white;
+  line-height: 1.8em;
+  color: gray;
+}
+
+.one, .two, .three, .four, .five, .six{
+    background-color: rgba(167, 80, 135, 0.473);
+    box-shadow: 3px 3px 5px 5px silver;
+}
+
+.btn{
+  color:#00B7FF;
+  background-color: transparent;
+  border:2px solid rgba(167, 80, 135, 0.473);
+}
+
+.contact-info{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.contact-info2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.send-btn{
+  background-color: transparent;
+  color:white;
+  border:1px solid #00B7FF;
+  border-radius: 3px;
+  padding:5px 12px;
+}
+
+.a-head{
+  color: white;
+}
+

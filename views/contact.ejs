@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title><%= title %></title>
+
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Chela+One|Gloria+Hallelujah" rel="stylesheet">
+
+ <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Estella</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="new">New Post</a></li>
+                <li><a href="edit">Edit Post</a></li>
+                <li><a href="archive">Archives</a></li>
+                <li><a href="article">Articles</a></li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+  <div class="row">
+    <div class="jumbotron">
+        <h1><%= title %></h1>
+    </div> 
+  </div>
+
+  <div class="row contact-info">
+      <h3>Feel free to contact me!</h3>
+
+      <form action="post">
+      Name <br> <input type="text" placeholder="Your Name">
+      <br><br>
+      Email <br> <input type="text" placeholder="Your Email Address">
+      <br><br>
+      Comments <br> <textarea placeholder="Comment Here" cols="50" rows="8"></textarea>
+      <br><br>
+      <button type="submit" class="send-btn">Send</button>
+      </form>
+
+      <div class="row contact-info2">
+
+        <ul>
+          <li class="bullets">Email: zoeestellethomas@gmail.com</li><br>
+          <li class="bullets">Phone: 0606089340 / 021-691 2258</li><br>
+          <li class="bullets">42 Repulse rd, belgravia, Lincoln Estate, Crawford, 7764</li>
+      </div>
+  </div>
+  
+  </body>
+  </html>
