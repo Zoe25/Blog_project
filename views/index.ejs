@@ -20,12 +20,12 @@
               <a class="navbar-brand" href="#">Estella</a>
             </div>
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="contact">Contact</a></li>
               <li><a href="new">New Post</a></li>
-              <li><a href="edit">Edit Post</a></li>
+              <!-- <li><a href="edit">Edit Post</a></li> -->
               <li><a href="archive">Archives</a></li>
-              <li><a href="article">Articles</a></li>
+              <li><a href="login">Login</a></li>
             </ul>
           </div>
         </nav>
@@ -41,25 +41,24 @@
  <div class="row">
     <% if (posts) { %>
 
-      <% posts.forEach(function(post){ %>
+      <% for ( var i = 0; i<3;i++){%>
+
        <div class="col-xs-12 co;-md-6 col-lg-4">
            <div class="panel panel-primary">
    
                <div class="panel-heading">
-                 <h3 class="panel-title"><h3><%= post.title %></h3></h3>
+                 <h3 class="panel-title"><h3><%= posts[i].title %></h3></h3>
                </div>
         
                <div class="panel-body">
-                 <p> <%= post.content %></p>
-                 <img src="<%=post.image %>" alt="" width="100%">
+                 <p> <%= posts[i].content %></p>
+                 <img src="<%=posts[i].image %>" alt="" width="100%">
                </div>
                <div class="panel-footer">
-                 <p>Author: <%= post.Author %></p>
-                 <p><%= post.time %></p>
-                 <p><%= post.date %></p>
-                 <a class="btn1"  role="button">Read More</a>
-                 <br>
-                 <a class="btn2" href="#" role="button">Edit</a>
+                 <p>author: <%= posts[i].author %></p>
+                 <p><%= posts[i].time %></p>
+                 <p><%= posts[i].date %></p>
+                 
                </div>
              </div>
         
@@ -68,7 +67,7 @@
    
       
    
-      <% }); %>
+      <% } %>
    
     <% } else { %>
    
@@ -76,6 +75,23 @@
    
     <% } %>
  </div>
+
+ <!-- <div>
+    <div class="footer">Copyright @ Estella'sBookBlog | 2018</div>
+  </div> -->
+
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text pull-left">© 2018 - Site Built By Zoe Estella
+           <a href="http://tinyurl.com/tbvalid" target="_blank" >Copyright</a>
+      </p>
+      
+      <a href="http://youtu.be/zJahlKPCL9g" class="navbar-btn btn-danger btn pull-right">
+      <span class="glyphicon glyphicon-star"></span>  Subscribe on YouTube</a>
+    </div>
+  </div>
+  
+
 
 </body>
 </html>

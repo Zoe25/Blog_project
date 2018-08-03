@@ -1,38 +1,61 @@
 body {
-  background-color: rgb(200, 120, 216);
+  background-color:#defffc;
+  /* background-image: url("https://hdwallsource.com/img/2015/6/crumpled-paper-wallpaper-hd-45972-47254-hd-wallpapers.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color:#ba8e51;
 }
 
 .jumbotron{
+  /* background-image: url("../images/paper-background.jpg"); */
   font-family: 'Chela One', cursive;
   font-size:80px;
   text-align: center;
-  background-color: rgba(201, 190, 197, 0.473);
-  color: white;
+  background-color:#e2e4f6;
+  color: #9ab8d4; 
 }
 
 .navbar{
-  background-color:white;
+  background-color:#e7c8dd;
+  /* margin:0px; */
 }
 
-.panel-primary>.panel-heading{
+/* .panel-primary>.panel-heading{
   background-color:white;
   /* border:5px solid black; */
-  color:rgba(167, 80, 135, 0.473);
+  /* color:rgba(167, 80, 135, 0.473); */
+/* } */ 
+
+.panel-primary>.panel-heading {
+  /* background-color: ; */
+  background-color: #dbafc1;
+  color:white;
+  border: 0px;
+  /* border-color: black;  */
 }
 
-.jumbotron{
+input #date .form-control{
+  width: 50%;
+}
+
+.panel{
+  border: 0px solid transparent;
+  box-shadow: 0px 5px 5px grey;
+}
+
+/* .jumbotron{
   box-shadow:3px 3px 5px 5px rgb(238, 217, 217);
-}
+} */
 
-.btn1, .btn2{
+.btn{
   color:rgba(150, 49, 113, 0.473);
   font-style: inherit;
+  outline: none;
 }
 
 #article{
@@ -49,7 +72,8 @@ a {
 .btn{
   color:#00B7FF;
   background-color: transparent;
-  border:2px solid rgba(167, 80, 135, 0.473);
+  /* outline:none; */
+  border: 0px ;
 }
 
 .contact-info{
@@ -63,15 +87,53 @@ a {
   grid-column-end: 3;
 }
 
-.send-btn{
-  background-color: transparent;
-  color:white;
-  border:1px solid #00B7FF;
-  border-radius: 3px;
-  padding:5px 12px;
-}
+
 
 .a-head{
   color: white;
+}
+
+/* .panel-footer{
+  margin: 0px; */
+  /* padding:0px; */
+/* } */
+
+.navbar, .container{
+  background-color: #dbafc1;
+}
+
+/* styling for login */
+.main {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.login-or {
+  position: relative;
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 10px;
+          margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+.hr-or {
+  background-color: #cdcdcd;
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+h3 {
+  text-align: center;
+  line-height: 300%;
 }
 

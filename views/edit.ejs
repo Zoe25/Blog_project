@@ -22,41 +22,50 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="panel panel-danger">
-            <div class="panel panel-heading text-center">
-                <h1>It's Update A Hero Time.</h1>
-            </div>
-            <div class="panel-body" id="all">
 
-                <% if (message) { %>
-                <div class="alert alert-success" role="alert">
-                    <%= message %>
-                </div>
-                <% } %> 
-                
-                <form method="POST" action="post">
+    <div class="panel panel-default">
+        <div class="panel-heading">Edit</div>
+      </div>
 
-                    <div class="form-group col-xs-12 col-sm-6 col-sm-offset-3">
-                        <label for="exampleInputName">Hero Name</label>
-                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="heroName" placeholder="Enter Hero Name" name="name" value="<%= posts.name %>">
-                        <!-- <small id=heroName" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-6 col-sm-offset-3">
-                        <label for="exampleInputURL">Image URL</label>
-                        <input type="text" class="form-control" id="exampleInputURL" placeholder="Link to hero image" name="image_url" value="<%= posts.image %>">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                        <button type="submit" class="btn btn-success btn-block">Add Hero</button>
-                    </div>
-
-                </form>
-
-            </div>
-            <div class="panel-footer text-center">
-                <p>All rights reserved 2018 | Estella.</p>
-            </div>
+      <form method="POST">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" class="form-control" name="title" id="title" placeholder="Name of blog" value="<%=posts.title%>">
         </div>
+        <div class="form-group">
+          <label for="author">Author:</label>
+          <input type="text" class="form-control" name="author" id="author" placeholder="Name of Author"  value="<%=posts.author%>">
+        </div>
+        <div class="form-group">
+          <label for="image">Image:</label>
+          <input type="text" class="form-control" name="image" id="image" placeholder="Image URL"  value="<%=posts.image%>">
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" class="form-control" name="date" id="date" placeholder="Date" value="<%=posts.date%>">
+        </div>
+        <div>
+          <label for="summary">Summary of story:</label>
+          <textarea class="summernote" name="content"><%=posts.content%></textarea>
+        </div>
+        <div>
+          <label for="summernote">Full story:</label>
+          <textarea class="summernote" name="story"><%= posts.story %></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Post</button>
+      </form>
+
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <p class="navbar-text pull-left">© 2018 - Site Built By Zoe Estella
+             <a href="http://tinyurl.com/tbvalid" target="_blank" >Copyright</a>
+        </p>
+        
+        <a href="http://youtu.be/zJahlKPCL9g" class="navbar-btn btn-danger btn pull-right">
+        <span class="glyphicon glyphicon-star"></span>  Subscribe on YouTube</a>
+      </div>
     </div>
 
 </body>

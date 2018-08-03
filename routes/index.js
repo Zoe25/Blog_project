@@ -2,25 +2,41 @@ var express = require('express');
 var router = express.Router();
 var http = require('http');
 var request = require('request');
+// var mysql = require('mysql');
+// var connection = mysql.createConnection({
+//   host : process.end.DB_HOST,
+//   user : process.env.DB_USER,
+//   password: process.end.DB_PASSWORD,
+//   database: process.env.DB_NAME
+// })
+
+// connection.connect()
+
+// HTMLModElement.exports = connection;
 
 //can import code directly from file
 var Posts = require('../db.json');
 
 // Get Login Page
 router.get('/login', function(req, res, next){
-  res,render('index', {title:'Login'});
+  res.render('login', {title:'Login'});
 });
 
 /* GET home page. */
 router.get('/', function(req, res, next){
-  res.render('index', { title: "Estella's Book Blog",posts:Posts.posts});
+  
+  request ({
+    url:"http://localhost:8000/posts?_sort=id&_order=desc" +req.params.id,
+    json:true
+  }, function(error, response, body){
+    res.render('index', { title: "Estella's Book Blog",posts:body});
+  });
 });
 
-/* GET article page. */
-router.get('/article', function(req, res, next){
-  res.render('article', { title: "Estella's Book Blog",posts:Posts.posts});
-});
-
+/* GET blog page. */
+router.get('/blog', function(req, res, next){
+  res.render('blog', { title: "Estella's Book Blog",posts:Posts.posts});
+}); 
 /* GET archive page */
 router.get('/archive', function(req, res, next) {
   res.render('archive', { title: "Estella's Book Blog - Archives",posts:Posts.posts} );
@@ -41,6 +57,71 @@ router.get('/delete/:id', function(req, res, next){
     res.redirect('/');
   });
 });
+
+// GET delete posts via archive page
+router.get('/delete/:id', function(req, res, next){
+  // console.log(req.params.id)
+  // make a post request to our database
+  request ({
+    url:"http://localhost:8000/posts/" +req.params.id,
+    method: "DELETE",
+  }, function(error, response, body){
+    let data = {
+      message: 'Successfully Removed.'
+    }
+
+    res.redirect('/');
+  });
+});
+
+/* GET home page. */
+router.get('/blog/:id', function(req, res, next){
+
+  let postVal = req.path.slice(-1);
+
+  res.render('blog', { title: "Estella's Book Blog", posts:Posts.posts[postVal -1]});
+});
+
+/* GET home page. */
+router.get('/edit/:id', function(req, res, next){
+
+  let postVal = req.path.slice(-1);
+
+  res.render('edit', { title: "Estella's Book Blog", posts:Posts.posts[postVal -1]});
+});
+
+// GET delete posts via archive page
+router.get('/edit/:id', function(req, res, next){
+  // console.log(req.params.id)
+  // make a post request to our database
+  request ({
+    url:"http://localhost:8000/posts/" +req.params.id,
+    method: "POST",
+  }, function(error, response, body){
+    let data = {
+      message: 'Successfully Removed.'
+    }
+
+    res.redirect('/');
+  });
+});
+
+
+// // GET delete posts via archive page
+// router.get('/edit/:id', function(req, res, next){
+//   // console.log(req.params.id)
+//   // make a post request to our database
+//   request ({
+//     url:"http://localhost:8000/posts/" +req.params.id,
+//     method: "DELETE",
+//   }, function(error, response, body){
+//     let data = {
+//       message: 'Successfully Removed.'
+//     }
+
+//     res.redirect('/');
+//   });
+// });
 
 /* GET contact page */
 router.get('/contact', function(req, res, next) {

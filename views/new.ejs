@@ -18,12 +18,12 @@
                 <a class="navbar-brand" href="#">Estella</a>
               </div>
               <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="contact">Contact</a></li>
                 <li><a href="new">New Post</a></li>
-                <li><a href="edit">Edit Post</a></li>
+                <!-- <li><a href="edit">Edit Post</a></li> -->
                 <li><a href="archive">Archives</a></li>
-                <li><a href="article">Articles</a></li>
+                <li><a href="login">Login</a></li>
               </ul>
             </div>
           </nav>
@@ -37,35 +37,63 @@
       </div>
 
   <div class="container">
-<form method="POST" action="/new" class="">
+<form method="post" action="/new">
   <div class="form-group">
     <label for="Title">Title</label>
     <input type="text" class="form-control" placeholder="Title"
     id="title" name="title">
   </div>
-<div class="form-group">
-  <label for="Author">Author</label>
+<div class="form-group" style="display: inline; width: 50%;">
+  <label for="author">Author:</label>
   <input type="text" class="form-control"
-  placeholder="Author" id="Author" name="author">
+  placeholder="Name of author" id="author" name="author" style="display: inline; width: 45%;">
 </div>
+
+<div class="form-group" style="display: inline; width: 50%;">
+    <label for="date">Date:</label>
+    <input type="date" class="form-control"
+    placeholder="date" id="date" name="Date" style="display: inline; width: 45%;">
+  </div>
 
 <div class="form-group">
-  <label for="datetime">Date</label>
-  <input type="date" class="form-control"
-  placeholder="datetime" id="datetime" name="datetime">
+  <label for="image">Image:</label>
+  <input type="text" class="form-control" name="image" id="image" placeholder="Image URL">
 </div>
 
 
-  <textarea id="summernote" name="editordata"></textarea>
+
+<div>
+  <label for="summary">Summary of story:</label>
+  <textarea class="summernote" name="content"></textarea>
+</div>
+
+<div>
+  <label for="summernote">Full story:</label>
+  <textarea class="summernote" name="story"></textarea>
+</div>
+
 <button type="submit" class="btn btn-primary">Post</button>
 </form>
+</div>
+
+<div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <p class="navbar-text pull-left">© 2018 - Site Built By Zoe Estella
+         <a href="http://tinyurl.com/tbvalid" target="_blank" >Copyright</a>
+    </p>
+    
+    <a href="http://youtu.be/zJahlKPCL9g" class="navbar-btn btn-danger btn pull-right">
+    <span class="glyphicon glyphicon-star"></span>  Subscribe on YouTube</a>
+  </div>
 </div>
 
 
 
 <script type="text/javascript">
 $(document).ready(function() {
-  $('#summernote').summernote();
+  $('.summernote').summernote({
+    height:300,
+  });
 });
 
 </script>

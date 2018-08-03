@@ -20,12 +20,12 @@
                 <a class="navbar-brand" href="#">Estella</a>
               </div>
               <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="contact">Contact</a></li>
                 <li><a href="new">New Post</a></li>
-                <li><a href="edit">Edit Post</a></li>
+                <!-- <li><a href="edit">Edit Post</a></li> -->
                 <li><a href="archive">Archives</a></li>
-                <li><a href="article">Articles</a></li>
+                <li><a href="login">Login</a></li>
               </ul>
             </div>
           </nav>
@@ -40,15 +40,25 @@
   <div class="row contact-info">
       <h3>Feel free to contact me!</h3>
 
-      <form action="post">
-      Name <br> <input type="text" placeholder="Your Name">
-      <br><br>
-      Email <br> <input type="text" placeholder="Your Email Address">
-      <br><br>
-      Comments <br> <textarea placeholder="Comment Here" cols="50" rows="8"></textarea>
-      <br><br>
-      <button type="submit" class="send-btn">Send</button>
-      </form>
+      <form method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="First Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="phone number">
+        </div>
+        <div>
+          <label for="summernote">Comment</label>
+          <textarea class="summernote" name="story"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Post</button>
+      </form> 
 
       <div class="row contact-info2">
 
@@ -57,6 +67,19 @@
           <li class="bullets">Phone: 0606089340 / 021-691 2258</li><br>
           <li class="bullets">42 Repulse rd, belgravia, Lincoln Estate, Crawford, 7764</li>
       </div>
+  </div>
+
+  <!-- <div class="panel-footer">Copyright @ Estella'sBookBlog | 2018</div> -->
+
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text pull-left">© 2018 - Site Built By Zoe Estella
+           <a href="http://tinyurl.com/tbvalid" target="_blank" >Copyright</a>
+      </p>
+      
+      <a href="http://youtu.be/zJahlKPCL9g" class="navbar-btn btn-danger btn pull-right">
+      <span class="glyphicon glyphicon-star"></span>  Subscribe on YouTube</a>
+    </div>
   </div>
   
   </body>
